@@ -1,6 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
+import { FlexModule } from '@angular/flex-layout';
+
 
 import {
   MatButtonModule,
@@ -26,7 +28,8 @@ import {
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FlexModule
   ],
   declarations: [],
   exports: [
@@ -39,7 +42,8 @@ import {
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FlexModule
   ]
 })
 export class MaterialModule {

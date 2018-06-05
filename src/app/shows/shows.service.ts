@@ -1,8 +1,16 @@
 import {Injectable} from '@angular/core';
 
+interface show {
+  artist: string;
+  title: string;
+  id: number;
+  image?: string;
+  description?: string;
+}
+
 @Injectable()
 export class ShowsService {
-  private shows = [{
+  private shows: show[] = [{
     artist: 'Proco Mode',
     title: 'The Not So Real Deal',
     id: 1
@@ -14,6 +22,14 @@ export class ShowsService {
     artist: 'Pajamas & Smores',
     title: 'The Deal',
     id: 3
+  }, {
+    artist: 'Dust and Bust',
+    title: 'The Really Real Deal',
+    id: 4
+  }, {
+    artist: 'Rich the ...ehem.',
+    title: 'No Deal',
+    id: 5
   }];
   private description = `One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
     in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a 
@@ -40,7 +56,11 @@ export class ShowsService {
   }
 
   getShows() {
-    return this.shows;
+    return this.shows.map(s => {
+      s.image = '../../assets/brand/brand-logo.jpg';
+      s.description = this.description;
+     return s;
+    });
   }
   getShow(id) {
     return this.shows.find(s =>  s.id === +id);

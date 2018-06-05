@@ -1,10 +1,32 @@
-<mat-list>
-  <h3 mat-subheader>Shows</h3>
-  <mat-list-item *ngFor="let show of shows">
-    <a mat-icon-button [routerLink]="show.id">
-      <mat-icon mat-list-icon>details</mat-icon>
-    </a>
-    <h4 mat-line>{{show.title}}</h4>
-    <p mat-line> {{show.aired | date}} </p>
-  </mat-list-item>
-</mat-list>
+<h3>Shows</h3>
+<div fxLayout="row wrap" fxLayoutAlign="space-around start">
+  <div fxFlex="32%" *ngFor="let show of shows">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="artist-header-image"></div>
+        <mat-card-title>{{show.title}}</mat-card-title>
+        <mat-card-subtitle>{{show.artist}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="show.image" alt="Photo of a {{show.title}}">
+      <mat-card-content>
+        <p>{{show.description}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+
+<!--<mat-list>-->
+
+  <!--<mat-list-item *ngFor="let show of shows">-->
+    <!--<a mat-icon-button [routerLink]="show.id">-->
+      <!--<mat-icon mat-list-icon>details</mat-icon>-->
+    <!--</a>-->
+    <!--<h4 mat-line>{{show.title}}</h4>-->
+    <!--<p mat-line> {{show.aired | date}} </p>-->
+  <!--</mat-list-item>-->
+<!--</mat-list>-->
