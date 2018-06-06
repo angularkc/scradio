@@ -7,12 +7,12 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/scradio/0.c391aa071747ae931ae5.js",
+        "/scradio/0.53decd015766702cd469.js",
         "/scradio/favicon.ico",
         "/scradio/index.html",
-        "/scradio/main.13eb651e823b8610e8ab.js",
+        "/scradio/main.b9ef248940e674a30d13.js",
         "/scradio/polyfills.a34353b9f24d594df249.js",
-        "/scradio/runtime.55b59663c3b98f0113cc.js",
+        "/scradio/runtime.759cba85e5ffb10d80a7.js",
         "/scradio/styles.43c658c48475aa934b57.css"
       ],
       "patterns": []
@@ -22,6 +22,9 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/scradio/assets/brand/brand-bg.jpg",
+        "/scradio/assets/brand/brand-logo.jpg",
+        "/scradio/assets/brand/favicon.png",
         "/scradio/assets/icons/icon-128x128.png",
         "/scradio/assets/icons/icon-144x144.png",
         "/scradio/assets/icons/icon-152x152.png",
@@ -36,7 +39,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/scradio/0.c391aa071747ae931ae5.js": "dce02a16f6b8ecb304959c541c96ff3fa6823a30",
+    "/scradio/0.53decd015766702cd469.js": "51089028773d4b62cc2c431bc4b47ec05be7ad91",
+    "/scradio/assets/brand/brand-bg.jpg": "a13fdd2c1687a79851fd09d969aa4cb16479af4b",
+    "/scradio/assets/brand/brand-logo.jpg": "5ce31cd16b7c43d01901450ff7f890aca6d03b2f",
+    "/scradio/assets/brand/favicon.png": "5ce31cd16b7c43d01901450ff7f890aca6d03b2f",
     "/scradio/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/scradio/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/scradio/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -46,10 +52,10 @@
     "/scradio/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/scradio/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/scradio/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/scradio/index.html": "a4c34223468dcaed43194178840f294c824cabbd",
-    "/scradio/main.13eb651e823b8610e8ab.js": "d4d6055d43b38389f9e4b2054ef13f114c89279d",
+    "/scradio/index.html": "4cbeb0cdbcd899cd7068eee1ed240c6342524c6e",
+    "/scradio/main.b9ef248940e674a30d13.js": "25288f430156ed61a353205dc38107cbcf6865f9",
     "/scradio/polyfills.a34353b9f24d594df249.js": "02a504e421a7dcfe4256c41d8adec867d315b73f",
-    "/scradio/runtime.55b59663c3b98f0113cc.js": "869c4192cdcc6749b3bc50fb732733c6b9e7d7a9",
+    "/scradio/runtime.759cba85e5ffb10d80a7.js": "5e1be946c4e9cbe834717ba55967ee2407c05e3e",
     "/scradio/styles.43c658c48475aa934b57.css": "52b613046b4b2361e9332000fccfda973dd300d8"
   },
   "navigationUrls": [
