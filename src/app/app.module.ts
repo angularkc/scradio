@@ -7,10 +7,6 @@ import {HomeComponent} from './home/home.component';
 import {MaterialModule} from './material';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {AuthModule} from './auth/auth.module';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
-import {CheckForUpdateService} from './services/check-for-update.service';
-import {LogUpdateService} from './services/log-update.service';
 
 @NgModule({
   declarations: [
@@ -23,10 +19,9 @@ import {LogUpdateService} from './services/log-update.service';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    AuthModule.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
+    AuthModule.forRoot()
   ],
-  providers: [CheckForUpdateService, LogUpdateService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
