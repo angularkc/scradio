@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 
-interface show {
+interface Show {
   artist: string;
   title: string;
   id: number;
@@ -10,7 +10,7 @@ interface show {
 
 @Injectable()
 export class ShowsService {
-  private shows: show[] = [{
+  private shows: Show[] = [{
     artist: 'Proco Mode',
     title: 'The Not So Real Deal',
     id: 1
@@ -57,7 +57,7 @@ export class ShowsService {
 
   getShows() {
     return this.shows.map(s => {
-      s.image = '../../assets/brand/brand-logo.jpg';
+      s.image = '../../assets/brand/brand-logo.gif';
       s.description = this.description;
      return s;
     });
@@ -74,8 +74,8 @@ export class ShowsService {
   }
 
   save(details) {
-    const show = this.shows.find(s => s.id === +details.id);
-    show.title = details.title;
+    const newShow = this.shows.find(s => s.id === +details.id);
+    newShow.title = details.title;
   }
 
 }
