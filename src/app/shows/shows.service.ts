@@ -57,7 +57,7 @@ export class ShowsService {
 
   getShows() {
     return this.shows.map(s => {
-      s.image = '../../assets/brand/brand-logo.jpg';
+      s.image = 'assets/brand/brand-logo.jpg';
       s.description = this.description;
      return s;
     });
